@@ -93,6 +93,17 @@ body{
     height: 100px;
     margin: 5px auto;  
     font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+#score{
+    background-color: #98dbc6;
+    color: rgb(17, 17, 16);
+    padding: 11px;
+    position: absolute;
+    left: 500px;
+    box-shadow: 0px 4px 0px #afafa6;
+    border-radius: 4px;  
+}
+
 
 
