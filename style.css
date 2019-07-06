@@ -62,4 +62,27 @@ body{
     border-radius: 3px;   
     text-align: center;     
 }
+#correctAnswer{
+    position: absolute;
+    left: 260px;
+    color: white;
+    padding: 11px;
+    display: none;
+    background-color: #42e252;
+    box-shadow: 0px 4px 2px #738574;
+    border-radius: 4px;
+    
+}
+
+#wrongAnswer{
+    position: absolute;
+    left: 250px;
+    background-color: #ff0414;
+    box-shadow: 0px 4px 2px #804c3f;
+    border-radius: 4px;
+    color: white;
+    padding: 11px;
+    display: none;
+}
+
 
