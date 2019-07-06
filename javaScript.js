@@ -48,10 +48,7 @@ function generateQAndA(){
     correctAnswer = x*y;
     document.getElementById("question").innerHTML = x + "x" + y;
     var correctPos = 1+ Math.round(3*Math.random());
-    document.getElementById("box"+correctPos).innerHTML = correctAnswer;
-    
-
-    
+    document.getElementById("box"+correctPos).innerHTML = correctAnswer;    
     var answers = [correctAnswer];
     
     for(i=1; i<5; i++){
@@ -66,6 +63,42 @@ function generateQAndA(){
     }
 }
 
+
+for(i=1; i<5; i++){
+    document.getElementById("box"+i).onclick = function(){
+    
+    if(play == true){
+        if(this.innerHTML == correctAnswer){
+      
+            score++;
+            document.getElementById("scorevalue").innerHTML = score;
+          
+            hide("wrong");
+            show("correct");
+            setTimeout(function(){
+                hide("correct");   
+            }, 1000);        
+         
+            
+            generateQA();
+        }else{        
+            hide("correct");
+            show("wrong");
+            setTimeout(function(){
+                hide("wrong");   
+            }, 1000);
+        }
+    }
+}   
+}
+
 function stopCountdown(){
     clearInterval(calculation);   
+}
+
+function hide(Id){
+    document.getElementById(Id).style.display = "none";   
+}
+function show(Id){
+    document.getElementById(Id).style.display = "block";   
 }
