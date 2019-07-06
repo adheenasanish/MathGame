@@ -1,0 +1,10 @@
+#container{
+    height: 410px;
+    width: 550px;
+  
+    margin: 100px auto;
+    background-color: #F7AEF8;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
