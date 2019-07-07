@@ -116,5 +116,11 @@ body{
     -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
     
 }
+#gameOver{
+    height: 230px;
+    width:500px;
+    background: linear-gradient(rgb(107, 109, 226), rgb(28, 155, 134));
+    background: -webkit-linear-gradient(rgb(133, 71, 214), rgb(79, 212, 112));
+}
 
 
