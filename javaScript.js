@@ -35,7 +35,7 @@ for(i=1; i<5; i++){
         if(this.innerHTML == correctAnswer){           
          
             score++;
-            document.getElementById("scorevalue").innerHTML = score;
+            document.getElementById("score").innerHTML = score;
           
             hide("wrongAns");
             show("correctAns");
@@ -64,7 +64,7 @@ function startTimer(){
         if(timeremaining == 0){
             stopCountdown();
             show("gameOver");
-         document.getElementById("gameOver").innerHTML = "<p>Game over!</p><p>Your score is : " + score + "</p>";   
+         document.getElementById("gamesOver").innerHTML = "<p>Game over!</p><p>Your score is : " + score + "</p>";   
             hide("timeremaining");
             hide("correctAns");
             hide("wrongAns");
